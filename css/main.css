@@ -1,0 +1,74 @@
+/* Preparation */
+*{
+    margin: 0; 
+    padding: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --usedBlack:#0D0D0D;
+}
+body{
+    height: 150vh;
+    background-color:var(--usedBlack);
+}
+/* nav start */
+nav{
+    z-index: 30;
+    position: fixed;
+    width: 40%;
+
+}
+nav .nav-content{
+    position: absolute;
+    background-color: aqua;
+    background-color: var(--usedBlack);
+    height: 100vh;
+    width: 50%;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+nav .navtoggler{
+    z-index: 3;
+    height: 100vh;
+    position: absolute;
+    width: 70px;
+    /* left: 50%; */
+    background-color: white;
+}
+/* nav end */
+/* home start */
+.container .row .akla{
+    width: 90%;
+    height: 90%;
+}
+.container .row .akla .hover{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.748);
+    transform: translateY(150%);
+    -webkit-transform: translateY(150%);
+    -moz-transform: translateY(150%);
+    -ms-transform: translateY(150%);
+    -o-transform: translateY(150%);
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -ms-transition:all 0.5s;
+    -o-transition:all 0.5s;
+}
+.container .row .akla:hover .hover{
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+}
+/* home end */
