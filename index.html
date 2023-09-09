@@ -11,94 +11,89 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- media query -->
     <link rel="stylesheet" href="css/media.css">
-    <link rel="shortcut icon" href="yummy/logo.png" type="image/x-icon">
-    <title>Yummy rep</title>
+    <link rel="shortcut icon" href="movieAPP/logo.png" type="image/x-icon">
+    <title>Movie App rep</title>
 </head>
 <body>
     <!-- side nav start -->
     <nav>
         <div class="navtoggler d-flex flex-column justify-content-between">
-            <div class="menu-logo w-100 text-center p-1">
-                <img src="yummy/logo.png" class="w-100" alt="logo">
+            <div class="menu-logo w-100 text-center p-3">
+                <img src="movieAPP/logo.png" class="w-100" alt="logo">
             </div>
             <div class="toggler text-center">
                 <input type="checkbox" id="toggle" hidden>
-                <label for="toggle"><i class="d-none fa-solid fa-close fa-3x"></i></label>
-                <label for="toggle"><i class="fa-solid fa-bars fa-3x"></i></label>
-            </div>
-            <div class="d-flex flex-column text-center p-2">
-                <i class="fa-solid fa-globe fs-4 m-2"></i>
-                <i class="fa-solid fa-share-nodes fs-4"></i>
+                <label for="toggle"><i class="d-none fa-solid fa-close fa-2x"></i></label>
+                <label for="toggle"><i class="fa-solid fa-bars fa-2x"></i></label>
             </div>
         </div>
         <div class="nav-content text-white d-flex flex-column justify-content-between py-3">
             <div class="navbody d-flex flex-column">
-                <a href="" class="navlinks text-decoration-none my-2 px-3 text-white text-capitalize" id="search">search</a>
-                <a href="" class="navlinks text-decoration-none my-2 px-3 text-white text-capitalize" id="categories">categories</a>
-                <a href="" class="navlinks text-decoration-none my-2 px-3 text-white text-capitalize" id="area">area</a>
-                <a href="" class="navlinks text-decoration-none my-2 px-3 text-white text-capitalize" id="ingredients">ingredients</a>
-                <a href="" class="navlinks text-decoration-none my-2 px-3 text-white text-capitalize" id="contact">contact us</a>
+                <a href="" class="navlinks text-decoration-none my-2 px-3 text-capitalize" id="playing">now playing</a>
+                <a href="" class="navlinks text-decoration-none my-2 px-3 text-capitalize" id="popular">popular</a>
+                <a href="" class="navlinks text-decoration-none my-2 px-3 text-capitalize" id="top">top rated</a>
+                <a href="" class="navlinks text-decoration-none my-2 px-3 text-capitalize" id="trending">trending</a>
+                <a href="" class="navlinks text-decoration-none my-2 px-3 text-capitalize" id="upcoming">upcoming</a>
+                <a href="#contactUs" class="navlinks text-decoration-none my-2 px-3 text-capitalize" id="contact">contact us</a>
             </div>
             <div class="copywrites p-2">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-instagram"></i>
-                <p class="text-capitalize">copyright &copy; 2019 all rights reserved.</p>
+                <p class="text-capitalize">copyright &copy; 2022 all rights reserved.</p>
             </div>
         </div>
     </nav>
     <!-- side nav end -->
     <!-- main body -->
     <div class=" mainHome container">
-        <div class="row" id="showMeals">
-            <!-- <div class="col-lg-3 col-md-4 p-4">
-                <div class="akla rounded-2 text-center position-relative overflow-hidden">
-                    <img src="yummy/logo.png" class="w-100" alt="">
-                    <div class="hover rounded-2">
-                        <h2>AKlA's NAME</h2>
+        <div class="row">
+            <div class="col-12 p-4">
+                <input id="searchBar" type="search" placeholder="Search" class="form-control w-50 mx-auto bg-transparent rounded-pill text-white shadow-none border-white px-3">
+            </div>
+        </div>
+        <div class="row" id="showmovies">
+            <!-- <div class="col-lg-4 p-4">
+                <div class="movie rounded-2 position-relative overflow-hidden">
+                    <img src="movieAPP/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100" alt="">
+                    <div class="hover rounded-2 d-flex flex-column justify-content-start">
+                        <div class="hoverTxt p-3">
+                            <h2 class="text-center">movie's NAME</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, nam eveniet harum culpa dolor nesciunt delectus! Nam dignissimos, iste laborum suscipit hic soluta, fugit ut quas molestias nostrum iusto perferendis!</p>
+                            <p>release date : 2023-08-02</p>
+                            <p>rating</p>
+                            <p class="rating rounded-pill">7.0</p>
+                        </div>
                     </div>
                 </div>
             </div> -->
         </div>
     </div>
-    <!-- categories -->
-    <div class="d-none categories container">
-        <div class="row" id="showCat">
-            <div class="col-lg-3 col-md-4 p-4">
-                <div class="akla rounded-2 text-center position-relative overflow-hidden">
-                    <img src="yummy/logo.png" class="w-100" alt="">
-                    <div class="hover rounded-2">
-                        <div class="text d-flex flex-column">
-                            <h2 class="fs-3">AKlA's NAME</h2>
-                            <p class="fs-6">AKlA's desc Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur ea, odio dignissimos natus iusto, perferendis fugiat ratione ipsa incidunt, architecto assumenda quibusdam aperiam voluptatum cumque animi. Quos, incidunt excepturi.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- contact us -->
-    <div class="d-none contactUs container p-5 d-flex align-items-center justify-content-center">
+    <div class="contactUs container p-5 d-flex align-items-center justify-content-center" id="contactUs">
             <div class="row g-3 ">
-                <div class="col-lg-6 px-md-5 px-sm-5">
-                    <input type="text" class="form-control" placeholder="Enter Your Name">
+                <div class="col-lg-12">
+                    <h2 class="text-white">Contact Us</h2>
                 </div>
                 <div class="col-lg-6 px-md-5 px-sm-5">
-                    <input type="text" class="form-control" placeholder="Enter Your Email">
+                    <input type="text" class="form-control bg-transparent border-0 border-bottom rounded-0 text-white" placeholder="Enter Your Name">
                 </div>
                 <div class="col-lg-6 px-md-5 px-sm-5">
-                    <input type="text" class="form-control" placeholder="Enter Your Phone">
+                    <input type="text" class="form-control  bg-transparent border-0 border-bottom rounded-0 text-white" placeholder="Enter Your Email">
                 </div>
                 <div class="col-lg-6 px-md-5 px-sm-5">
-                    <input type="text" class="form-control" placeholder="Enter Your Age">
+                    <input type="text" class="form-control  bg-transparent border-0 border-bottom rounded-0 text-white" placeholder="Enter Your Phone">
                 </div>
                 <div class="col-lg-6 px-md-5 px-sm-5">
-                    <input type="text" class="form-control" placeholder="Enter Your Password">
+                    <input type="text" class="form-control  bg-transparent border-0 border-bottom rounded-0 text-white" placeholder="Enter Your Age">
                 </div>
                 <div class="col-lg-6 px-md-5 px-sm-5">
-                    <input type="text" class="form-control" placeholder="Repassword">
+                    <input type="text" class="form-control  bg-transparent border-0 border-bottom rounded-0 text-white" placeholder="Enter Your Password">
                 </div>
-                <div class="col-12 d-flex justify-content-center">
+                <div class="col-lg-6 px-md-5 px-sm-5">
+                    <input type="text" class="form-control  bg-transparent border-0 border-bottom rounded-0 text-white" placeholder="Repassword">
+                </div>
+                <div class="col-12 d-flex justify-content-start">
                     <button type="submit" class="btn btn-outline-danger" placeholder="Repassword">Submit</button>
                 </div>
             </div>
